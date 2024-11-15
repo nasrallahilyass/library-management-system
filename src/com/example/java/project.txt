@@ -1,0 +1,11 @@
+Project: Library Management System (Basic)
+Goal: Create a simple system to manage books and users.
+Requirements:
+1. Define a Book class with attributes like title,
+    author, and ISBN, and a User class with attributes like name and ID.
+2. Implement a Library class that contains an ArrayList of books
+    and provides methods to add, view, and check out books.
+3. Use encapsulation to make fields private and provide getters/setters for access.
+4. If comfortable, create two user types (e.g., Student and Teacher)
+    that inherit from User to practice inheritance.
+Expected Outcome: You’ll get a deep understanding of OOP principles, including classes, objects, encapsulation, inheritance, and polymorphism.

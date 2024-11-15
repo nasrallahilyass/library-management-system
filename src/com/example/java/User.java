@@ -1,15 +1,28 @@
 package com.example.java;
 
 public class User {
-
     private int id;
     private String name;
+    private int age;
 
-    public User() {}
+    // Contractors:
+    public User() {
+    }
 
-    public User(int id, String name) {
+    public User(int id, String name, int age) {
         this.id = id;
         this.name = name;
+        this.age = age;
+    }
+
+    // Getters and setters:
+
+    public int getId() {
+        return id;
+    }
+
+    public void setId(int id) {
+        this.id = id;
     }
 
     public String getName() {
@@ -20,12 +33,12 @@ public class User {
         this.name = name;
     }
 
-    public int getId() {
-        return id;
+    public int getAge() {
+        return age;
     }
 
-    public void setId(int id) {
-        this.id = id;
+    public void setAge(int age) {
+        this.age = age;
     }
 
     @Override
@@ -33,6 +46,7 @@ public class User {
         return "User{" +
                 "id=" + id +
                 ", name='" + name + '\'' +
+                ", age=" + age +
                 '}';
     }
 }

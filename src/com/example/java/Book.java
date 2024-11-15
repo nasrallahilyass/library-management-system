@@ -1,11 +1,11 @@
 package com.example.java;
 
 public class Book {
-
     private String title;
     private String author;
     private int ISBN;
 
+    // Constructors:
     public Book() {
     }
 
@@ -14,6 +14,9 @@ public class Book {
         this.author = author;
         this.ISBN = ISBN;
     }
+
+    // Getters and setters:
+
 
     public String getTitle() {
         return title;

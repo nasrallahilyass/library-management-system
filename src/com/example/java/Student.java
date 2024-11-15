@@ -1,22 +1,35 @@
 package com.example.java;
 
 public class Student extends User {
-    private String gradeLevel;
 
-    // Constructor
+    private String grade;
+
+    // Constructors:
     public Student() {
     }
 
-    public Student(int id, String name, String gradeLevel) {
-        super(id, name);
-        this.gradeLevel = gradeLevel;
+    public Student(int id, String name, int age, String grade) {
+        super(id, name, age);
+        this.grade = grade;
     }
 
-    public String getGradeLevel() {
-        return gradeLevel;
+    // Getters and setters:
+
+    public String getGrade() {
+        return grade;
     }
 
-    public void setGradeLevel(String gradeLevel) {
-        this.gradeLevel = gradeLevel;
+    public void setGrade(String grade) {
+        this.grade = grade;
+    }
+
+    @Override
+    public String toString() {
+        return "Student{" +
+                "id= " + getId() + '\'' +
+                "name=' " + getName() + '\'' +
+                "age= " + getAge() + '\'' +
+                "grade= " + grade +
+                '}';
     }
 }

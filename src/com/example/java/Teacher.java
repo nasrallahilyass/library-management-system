@@ -1,13 +1,21 @@
 package com.example.java;
 
-public class Teacher extends User{
+public class Teacher extends User {
     private String subject;
 
-    public Teacher(){}
-    public Teacher(int id, String name, String subject) {
-        super(id, name);
+    // Constructors:
+    public Teacher() {
+    }
+
+    ;
+
+    public Teacher(int id, String name, int age, String subject) {
+        super(id, name, age);
         this.subject = subject;
     }
+
+    // Getters and setters
+
 
     public String getSubject() {
         return subject;
@@ -15,5 +23,15 @@ public class Teacher extends User{
 
     public void setSubject(String subject) {
         this.subject = subject;
+    }
+
+    @Override
+    public String toString() {
+        return "Teacher{" +
+                "id=" + getId() + '\'' +
+                "name='" + getName() + '\'' +
+                "age=" + getAge() + '\'' +
+                "subject='" + subject + '\'' +
+                '}';
     }
 }
